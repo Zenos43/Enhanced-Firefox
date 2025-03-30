@@ -84,6 +84,22 @@ user_pref("layout.css.forced-colors.enabled", true);
 //Instant start-up
 user_pref("browser.startup.preXulSkeletonUI", false);
 
+// PREF: improve font rendering by using DirectWrite everywhere like Chrome [WINDOWS]
+user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
+user_pref("gfx.font_rendering.cleartype_params.cleartype_level", 100);
+user_pref("gfx.font_rendering.directwrite.use_gdi_table_loading", false);
+//user_pref("gfx.font_rendering.cleartype_params.enhanced_contrast", 50); // 50-100 [OPTIONAL]
+
+user_pref("network.early-hints.enabled", true);
+user_pref("network.early-hints.preconnect.enabled", true);
+user_pref("network.early-hints.preconnect.max_connections", 20);
+user_pref("zen.theme.border-radius", 0);
+user_pref("zen.theme.gradient", false);
+user_pref("zen.theme.color-prefs.colorful", false);
+user_pref("zen.view.experimental-rounded-view", false);
+user_pref("zen.widget.windows.acrylic", false);
+user_pref("zen.view.compact.animate-sidebar", false);
+
 //Snappier tooltips
 user_pref("ui.tooltip.delay_ms", 60);
 user_pref("ui.tooltipDelay", 60);

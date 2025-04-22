@@ -99,7 +99,10 @@ user_pref("zen.theme.color-prefs.colorful", false);
 user_pref("zen.view.experimental-rounded-view", false);
 user_pref("zen.widget.windows.acrylic", false);
 user_pref("zen.view.compact.animate-sidebar", false);
-
+user_pref("browser.translations.panelShown", false);
+user_pref("browser.translations.select.enable", false);
+user_pref("browser.translations.enable", false);
+user_pref("browser.translations.automaticallyPopup", false);
 //Snappier tooltips
 user_pref("ui.tooltip.delay_ms", 60);
 user_pref("ui.tooltipDelay", 60);

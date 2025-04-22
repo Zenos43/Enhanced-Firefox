@@ -1,0 +1,6 @@
+{
+  "autoDelete": true,
+  "autoDeleteDay": "1000",
+  "patterns": "^http*://nhentai.net/\n^http*://rule34.*.*/\n^http*://rule34.*/\n^http*://rule34video.com/\n^http*://xvideos.com/",
+  "recent": "24"
+}

@@ -89,6 +89,16 @@ user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
 user_pref("gfx.font_rendering.cleartype_params.cleartype_level", 100);
 user_pref("gfx.font_rendering.directwrite.use_gdi_table_loading", false);
 //user_pref("gfx.font_rendering.cleartype_params.enhanced_contrast", 50); // 50-100 [OPTIONAL]
+user_pref("security.OCSP.enabled", 0);
+
+//Smooth scrolling
+user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 250);
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 200);
+user_pref("mousewheel.enable_pixel_scrolling", false);
+user_pref("apz.overscroll.enabled", true);
+user_pref("general.smoothScroll", true);
+user_pref("mousewheel.default.delta_multiplier_y", 275);
+
 
 user_pref("network.early-hints.enabled", true);
 user_pref("network.early-hints.preconnect.enabled", true);
@@ -143,11 +153,34 @@ user_pref("browser.taskbar.previews.max", 0);
 // Optimize rendering speed
 // https://voz.vn/t/tong-hop-nhung-addon-chat-cho-firefox-pc-mobile.682181/post-23570551
 // https://voz.vn/t/tong-hop-nhung-addon-chat-cho-firefox-pc-mobile.682181/post-27064564
-user_pref("nglayout.initialpaint.delay", 250);
-user_pref("nglayout.initialpaint.delay_in_oopif", 250);
+user_pref("nglayout.initialpaint.delay", 2000);
+user_pref("nglayout.initialpaint.delay_in_oopif", 2000);
 //user_pref("content.notify.backoffcount", 0);
 //user_pref("content.notify.interval", 2000000);
 //user_pref("content.notify.ontimer", true);
+user_pref("gfx.webrender.super-resolution.nvidia", true);
+user_pref("javascript.options.wasm_experimental_compile_pipeline", true);
+
+// Optimize page loading speed
+user_pref("network.dns.disablePrefetch", false);
+user_pref("network.prefetch-next", true);
+user_pref("network.predictor.enabled", true);
+user_pref("network.dns.disablePrefetchFromHTTPS", false);
+user_pref("network.predictor.enable-hover-on-ssl", false);
+user_pref("security.remote_settings.crlite_filters.enabled", true);
+user_pref("security.pki.crlite_mode", 2);
+
+// Reduce cpu usage ( Not recommend )
+user_pref("media.rdd-vpx.enabled", false);
+user_pref("media.rdd-process.enabled", false);
+
+// Disable Spectre ( Not recommend )
+user_pref("javascript.options.spectre.disable_for_isolated_content", true);
+user_pref("javascript.options.spectre.index_masking", false);
+user_pref("javascript.options.spectre.object_mitigations", false);
+user_pref("javascript.options.spectre.string_mitigations", false);
+user_pref("javascript.options.spectre.value_masking", false);
+user_pref("javascript.options.spectre.jit_to_cxx_calls", false);
 
 // Enable punycode
 // https://voz.vn/t/tong-hop-nhung-addon-chat-cho-firefox-pc-mobile.682181/post-25938099
@@ -213,10 +246,6 @@ user_pref("network.buffer.cache.count", 24); // default=24
 // Enable Add Search
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);
 
-// Enable Sleeping Tab
-user_pref("floorp.tabsleep.enabled", true);
-user_pref("floorp.tabsleep.tabTimeoutMinutes", 6);
-
 // Enable PWA
 user_pref("browser.ssb.enabled", true);
 
@@ -224,8 +253,20 @@ user_pref("browser.ssb.enabled", true);
 // https://voz.vn/t/cach-ep-firefox-luu-cache-tren-ram-ma-khong-can-ramdisk.664955/
 user_pref("browser.cache.disk.enable", false);
 user_pref("browser.cache.memory.enable", true);
-user_pref("browser.cache.memory.capacity", 524288);
+user_pref("browser.cache.memory.capacity", 4194304);
 user_pref("browser.cache.memory.max_entry_size", 512000);
+
+// Optimize RAM, uncomment // to enable
+user_pref("dom.ipc.processCount", 1);
+user_pref("fission.autostart", false);
+user_pref("dom.ipc.processCount.webIsolated", 1);
+
+// Optimize back/forward cached no need to reload
+user_pref("dom.script_loader.navigation_cache", true);
+user_pref("browser.cache.check_doc_frequency", 2);
+user_pref("dom.script_loader.external_scripts.speculate_async.enabled", false);
+user_pref("dom.script_loader.external_scripts.speculate_link_preload.enabled", false);
+user_pref("dom.script_loader.external_scripts.speculate_non_parser_inserted.enabled", false);
 
 // Disable FastBack to save RAM
 //user_pref("fission.bfcacheInParent", false);
@@ -235,6 +276,19 @@ user_pref("browser.cache.memory.max_entry_size", 512000);
 // Enable Multi-Account Container
 //user_pref("privacy.userContext.enabled", true); //enable Multi-Account Container
 //user_pref("privacy.userContext.ui.enabled", true); //enable Multi-Account Container
+
+/*** [SECTION 0200]: GEOLOCATION / LANGUAGE / LOCALE ***/
+user_pref("_user.js.parrot", "0200 syntax error: the parrot's definitely deceased!");
+/* 0201: use Mozilla geolocation service instead of Google if permission is granted [FF74+]
+ * Optionally enable logging to the console (defaults to false) ***/
+user_pref("geo.provider.network.url", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
+   // user_pref("geo.provider.network.logging.enabled", true); // [HIDDEN PREF]
+/* 0202: disable using the OS's geolocation service ***/
+user_pref("geo.provider.ms-windows-location", false); // [WINDOWS]
+user_pref("geo.provider.use_corelocation", false); // [MAC]
+user_pref("geo.provider.use_gpsd", false); // [LINUX]
+user_pref("geo.provider.use_geoclue", false); // [FF102+] [LINUX]
+
 
 // Enable Cookie Banner Protection
 user_pref("cookiebanners.service.mode", 2);
@@ -280,6 +334,7 @@ user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.coverage.opt-out", true);
 user_pref("toolkit.coverage.opt-out", true);
 user_pref("toolkit.coverage.endpoint.base", "");
+user_pref("browser.ping-centre.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 

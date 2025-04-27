@@ -1,0 +1,3 @@
+Spectre and Meltdown in NTLite and Windows
+Reserved Storage
+UWP app support

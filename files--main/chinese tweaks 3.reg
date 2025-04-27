@@ -1,0 +1,502 @@
+Windows Registry Editor Version 5.00
+
+;; Security and positioning
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WMDRM]
+"DisableOnline"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredUI]
+"DisablePasswordReveal"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DiagTrack]
+"Start"=dword:00000004
+"DelayedAutoStart"=dword:00000000
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dmwappushservice]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener]
+"Start"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lfsvc\Service\Configuration]
+"Status"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}]
+"SensorPermissionState"=dword:00000000
+
+;; Cortana
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\MailSettings]
+"InlineTextPrediction"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Personalization]
+"Enabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\BrowserSettings]
+"Enabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Credentials]
+"Enabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Language]
+"Enabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Accessibility]
+"Enabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Windows]
+"Enabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Windows Search]
+"CortanaConsent"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SystemPaneSuggestionsEnabled"=dword:00000001
+"RotatingLockScreenEnabled"=dword:00000001
+"RotatingLockScreenOverlayEnabled"=dword:00000001
+"SubscribedContent-338387Enabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackDocs"=dword:00000001
+"ShowSyncProviderNotifications"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableWebSearch"=dword:00000001
+"AllowCortanaAboveLock"=dword:00000000
+"AllowCloudSearch"=dword:00000000
+"ConnectedSearchUseWeb"=dword:00000000
+"AllowSearchToUseLocation"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
+"AllowInputPersonalization"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Preferences]
+"ModelDownloadAllowed"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontReportInfectionInformation"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+"SubmitSamplesConsent"=dword:00000002
+"SpyNetReporting"=dword:00000000
+
+;; OneDrive
+[HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OneDrive]
+"PreventNetworkTrafficPreUserSignIn"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000001
+
+;; Office privacy
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM]
+"Enablelogging"=dword:00000000
+"EnableUpload"=dword:00000000
+"EnableFileObfuscation"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\MailSettings]
+"InlineTextPrediction"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common]
+"LinkedIn"=dword:00000000
+"QMEnable"=dword:00000000
+"UpdateReliabilityData"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Privacy]
+"DisconnectedState"=dword:00000002
+"ControllerConnectedServicesEnabled"=dword:00000002
+"UserContentDisabled"=dword:00000002
+"DownloadContentDisabled"=dword:00000002
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\Common\ClientTelemetry]
+"SendTelemetry"=dword:00000003
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\Common\ClientTelemetry]
+"DisableTelemetry"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Feedback]
+"Enabled"=dword:00000000
+"IncludeEmail"=dword:00000000
+"SurveyEnabled"=dword:00000000
+
+;; Turn off syncing
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Language]
+"Enabled"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync]
+"SyncPolicy"=dword:00000005
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Personalization]
+"Enabled"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\BrowserSettings]
+"Enabled"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Windows]
+"Enabled"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Accessibility]
+"Enabled"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Credentials]
+"Enabled"=dword:00000000
+
+;活动历史记录
+[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+"EnableClipboardHistory"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"AllowClipboardHistory"=dword:00000000
+"AllowCrossDeviceClipboard"=dword:00000000
+
+;;桌面图标快捷方式
+;; ;删除“快捷方式到”的字样  
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"Link"=hex:00,00,00,00        
+;;;删除新建快捷方式几个字  
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"Link"=hex:00,00,00,00
+
+;;显示桌面图标(当前用户)
+;显示此电脑
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+
+;;隐私服务优化
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PimIndexMaintenanceSvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UnistoreSvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UserDataSvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MessagingService]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CDPUserSvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WaaSMedicSvc]
+"Start"=dword:00000004
+
+;; Close Windows Prompt Trick
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
+
+; Turn off Xbox-DVR
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR]
+"AllowGameDVR"=dword:00000000
+
+;; Turn off I/O counters at the system and process level
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\I/O System]
+"CountOperations"=dword:00000000
+
+; Modify the startup mode of the service process, do not enable infrequently used processes to speed up the speed, 3 is manual, 4 is disabled
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Alerter]
+;" Description"="Notify selected users and computers about system administration-level alerts. "
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BITS]
+;" Description"="Transfer files in the background with idle network bandwidth. If this service is disabled, any features that rely on BITS, such as Windows Update or MSN Explorer, will not be able to automatically download programs and other information. "
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cisvc]
+;" DisplayName"="Indexing Service"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dfs]
+;" Description"="管理分布于局域网或广域网的逻辑卷。 "
+;" DisplayName"="Distributed File System"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmadmin]
+;" DisplayName"="Logical Disk Manager Administrative Service"
+;" Description"="System Management Services for Disk Management Requests"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmserver]
+;" DisplayName"="Logical Disk Manager"
+;" Description"="逻辑磁盘管理器监视狗服务"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Fax]
+;" Description"="帮助您发送和接收传真"
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LicenseService]
+;" DisplayName"="License Logging Service"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LmHosts]
+;" Description"="允许对“TCP/IP 上 NetBIOS (NetBT)”服务以及 NetBIOS 名称解析的支持。 "
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MDM]
+;" DisplayName"="Machine Debug Manager"
+;" Description"="Supports local and remote debugging of Visual Studio and the script debugger. If the service stops, the debugger won't work. "
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Messenger]
+;" Description"="Send and receive messages from the system administrator or the "Siren" service. "
+;" DisplayName"="Messenger"
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC]
+;" Description"=" Parallel transactions are distributed across two or more databases, message queues, file systems, or other transaction protection resource managers. "
+;" DisplayName"="Distributed Transaction Coordinator"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTPSVC]
+;" Description"="Provides FTP connection and management through the snap-in of the Internet Information Services. "
+;" DisplayName"="FTP Publishing Service"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NtmsSvc]
+;" Description"="管理可移动媒体、驱动程序和库。 "
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Schedule]
+;" Description"="允许程序在指定时间运行。 "
+;" DisplayName"="Task Scheduler"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SENS]
+;" Description"="跟踪系统事件，如登录 Windows，网络以及电源事件等。 将这些事件通知给 COM+ 事件系统 “订阅者(subscriber)”。 "
+;" DisplayName"="System Event Notification"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\seclogon]
+;" Description"='Enable Enable Process under Replacement Credentials. If this service is terminated, this type of login access will not be available. If this service is disabled, any services that depend on it will not be able to start. "
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SMTPSVC]
+;" Description"="跨网传送电子邮件"
+;" DisplayName"="Simple Mail Transport Protocol (SMTP)"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TrkSvr]
+;" Description"="保存文件在域中卷之间移动的信息。 "
+;" DisplayName"="Distributed Link Tracking Server"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TrkWks]
+;" Description"="当文件在网络域的 NTFS 卷中移动时发送通知。 "
+;" DisplayName"="Distributed Link Tracking Client"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ProtectedStorage]
+;" Description"="Provides protective storage of sensitive data, such as private keys, in order to prevent unauthorized access to services, processes or users to them. "
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteRegistry]
+;" Description"="允许远程注册表操作。 "
+;" DisplayName"="Remote Registry Service"
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\srservice]
+; Perform a system restore function. Turn off System Restore from the System Restore tab in the properties of My Computer.
+"Start"=dword:00000003
+
+; Install a license server and provide a registered client license when connecting to a terminal server.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermServLicensing]
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService]
+;" Description"="Provides a multi-session environment that allows client devices to access virtual Windows 2000 Professional desktop sessions as well as Windows-based programs running on servers. "
+;" DisplayName"="Terminal Services"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time]
+;" Description"="设置计算机时钟。 "
+;" DisplayName"="Windows Time"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv]
+;" Description"="Allows Windows updates to be downloaded and installed."" If this service is disabled, your computer will not be able to use the automatic update feature of the Windows Update website. "
+;" DisplayName"="Automatic Updates"
+"Start"=dword:00000003
+
+; Turn off Remote Assistance
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
+"fAllowToGetHelp"=dword:00000000
+
+; Disable error reporting
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc]
+"Start"=dword:00000004
+
+; Disable HomeGroup
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HomeGroupProvider]
+"Start"=dword:00000004
+
+;; HV host services
+;; Provides an interface to the Hyper-V hypervisor to provide single-partition performance counters to the host operating system.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HvHost]
+"Start"=dword:00000003
+
+;; Hyper-V Data Exchange Service
+;; Provides a mechanism for exchanging data between a virtual machine and an operating system running on a physical computer.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmickvpexchange]
+"Start"=dword:00000004
+
+;; Hyper-V Guest Service Interface
+;; Provide an interface for Hyper-V hosts to interact with specific services running within a virtual machine.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicguestinterface]
+"Start"=dword:00000004
+
+;; Hyper-V Guest Shutdown Service
+;; Provides a mechanism for shutting down the operating system of this virtual machine from the management interface on the physical computer.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicshutdown]
+"Start"=dword:00000004
+
+;; Hyper-V Heartbeat Service
+;; Monitor the status of this virtual machine by reporting heartbeats on a regular basis. This service helps you identify which running virtual machines have stopped responding.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicheartbeat]
+"Start"=dword:00000004
+
+;; Hyper-V PowerShell Direct Service
+;; Provides a mechanism to use PowerShell to manage virtual machines through VM sessions without using a virtual network.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicvmsession]
+"Start"=dword:00000004
+
+;; Hyper-V Time Synchronization Service
+;; Synchronize the system time of this virtual machine with the system time of the physical computer.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmictimesync]
+"Start"=dword:00000004
+
+;; Hyper-V 卷影复制请求程序
+;; Orchestrate the communication required to use the Volume Shadow Copy Service to back up the applications and data on this virtual machine from the operating system on the physical computer.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicvss]
+"Start"=dword:00000004
+
+;; Hyper-V Remote Desktop Virtualization Service
+;; Provides a platform to communicate between a virtual machine and an operating system running on a physical computer.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicrdv]
+"Start"=dword:00000004
+
+;; WalletService
+;; The host object used by the Wallet client
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WalletService]
+"Start"=dword:00000004
+
+;; Payment and NFC/SE Manager
+;; Manage payments and Near Field Communication (NFC)-based Secure Element.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SEMgrSvc]
+"Start"=dword:00000004
+
+;; Geolocation Service
+;; This service will monitor the current location of the system and manage geofencing (geolocation with associated events). If you disable this service, the app won't be able to use or receive notifications about geolocation or geofencing.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc]
+"Start"=dword:00000004
+
+;; Connected User Experiences and Telemetry
+;; The features enabled by the Connected User Experience and Telemetry Service support both the in-app user experience and the connected user experience.
+;; In addition, if the Diagnostic and Usage Privacy Options setting is enabled under Feedback and Diagnostics, the Service can manage the collection and transfer of diagnostic and usage information based on events
+;; (Used to improve the experience and quality of the Windows platform).
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+"Start"=dword:00000004
+
+; Modify the Explorer display page
+; The full path is displayed in the address bar and title bar
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\CabinetState]
+"FullPath"=dword:00000001
+"FullPathAddress"=dword:00000001
+"Settings"=hex:0c,00,02,00,0b,01,06,00,60,00,00,00
+
+; Show all files, show all file extensions, use traditional folders
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000001
+"HideFileExt"=dword:00000000
+"WebView"=dword:00000000
+"ClassicViewState"=dword:00000000
+"ShowSuperHidden"=dword:00000000
+"NoNetCrawling"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"IconUnderline"=hex(0):03,00,00,00
+
+; Remove the "Click here to get started" arrow
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoStartBanner"=dword:01000000
+
+;; Disable insecure guest access
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"AllowInsecureGuestAuth"=dword:0
+
+; The photo viewer automatically scales the picture
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities\FileAssociations]
+"*.jpg=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.tif=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.tiff=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.cr2=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.wdp=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.jfif=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.JFIF"
+"*.dib=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.png=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.jxr=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.bmp=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.jpeg=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.gif=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.ico=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+"*.tga=PhotoViewer.FileAssoc.Tiff"="PhotoViewer.FileAssoc.Tiff"
+
+;; 桌面堆设置,SharedSection=1024,4096,768; MaxRequestThreads=96.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\SubSystems]
+"Windows"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,63,\
+  00,73,00,72,00,73,00,73,00,2e,00,65,00,78,00,65,00,20,00,4f,00,62,00,6a,00,\
+  65,00,63,00,74,00,44,00,69,00,72,00,65,00,63,00,74,00,6f,00,72,00,79,00,3d,\
+  00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,53,00,68,00,61,00,\
+  72,00,65,00,64,00,53,00,65,00,63,00,74,00,69,00,6f,00,6e,00,3d,00,31,00,30,\
+  00,32,00,34,00,2c,00,34,00,30,00,39,00,36,00,2c,00,37,00,36,00,38,00,20,00,\
+  57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,3d,00,4f,00,6e,00,20,00,53,00,75,\
+  00,62,00,53,00,79,00,73,00,74,00,65,00,6d,00,54,00,79,00,70,00,65,00,3d,00,\
+  57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,53,00,65,00,72,00,76,00,65,\
+  00,72,00,44,00,6c,00,6c,00,3d,00,62,00,61,00,73,00,65,00,73,00,72,00,76,00,\
+  2c,00,31,00,20,00,53,00,65,00,72,00,76,00,65,00,72,00,44,00,6c,00,6c,00,3d,\
+  00,77,00,69,00,6e,00,73,00,72,00,76,00,3a,00,55,00,73,00,65,00,72,00,53,00,\
+  65,00,72,00,76,00,65,00,72,00,44,00,6c,00,6c,00,49,00,6e,00,69,00,74,00,69,\
+  00,61,00,6c,00,69,00,7a,00,61,00,74,00,69,00,6f,00,6e,00,2c,00,33,00,20,00,\
+  53,00,65,00,72,00,76,00,65,00,72,00,44,00,6c,00,6c,00,3d,00,73,00,78,00,73,\
+  00,73,00,72,00,76,00,2c,00,34,00,20,00,50,00,72,00,6f,00,66,00,69,00,6c,00,\
+  65,00,43,00,6f,00,6e,00,74,00,72,00,6f,00,6c,00,3d,00,4f,00,66,00,66,00,20,\
+  00,4d,00,61,00,78,00,52,00,65,00,71,00,75,00,65,00,73,00,74,00,54,00,68,00,\
+  72,00,65,00,61,00,64,00,73,00,3d,00,39,00,36,00,00,00
+
+;; Remove search page feeds and hot searches
+;; Windows 10: Taskbar right-click > search - > search highlighting [Off]
+;; Windows 11: Settings - > Privacy & Security - > More Settings - Show Search Highlights > [Off]
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+;; Kernel deadlock detection
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"EnableDeadGwdTimers"=dword:00000001
+
+; Account: A local account with an empty password is only allowed to log in to the console
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa]
+"LimitBlankPasswordUse"=dword:00000001
+
+;; How to set the record of the automatic clearing of the operation box when the machine is turned off (1=Deleted when the device is turned off, 0=No)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"ClearRecentDocsOnExit"=dword:00000001
+
+;; Automatically uninstall useless DLL files
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Currentversion\Explorer]
+"AlwaysUnloadDLL"=dword:00000001
+
+; ClearType technology
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"FontSmoothing"="2"
+"FontSmoothingGamma"=dword:00000000
+"FontSmoothingOrientation"=dword:00000001
+"FontSmoothingType"=dword:00000002
+
+; Turn off News & Interests
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Feeds]
+"FeedsEnabled"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds]
+"EnableFeeds"=dword:00000000

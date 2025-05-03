@@ -150,6 +150,9 @@ user_pref("browser.taskbar.lists.maxListItemCount", 0);
 user_pref("browser.taskbar.lists.tasks.enabled", false);
 user_pref("browser.taskbar.previews.max", 0);
 
+// Enable PiP
+user_pref("media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled", true);
+
 // Optimize rendering speed
 // https://voz.vn/t/tong-hop-nhung-addon-chat-cho-firefox-pc-mobile.682181/post-23570551
 // https://voz.vn/t/tong-hop-nhung-addon-chat-cho-firefox-pc-mobile.682181/post-27064564
@@ -166,9 +169,24 @@ user_pref("network.dns.disablePrefetch", false);
 user_pref("network.prefetch-next", true);
 user_pref("network.predictor.enabled", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", false);
+user_pref("network.dnsCacheEntries", 20000);
+user_pref("network.dnsCacheExpiration", 3600);
+user_pref("network.dnsCacheExpirationGracePeriod", 240);
 user_pref("network.predictor.enable-hover-on-ssl", false);
 user_pref("security.remote_settings.crlite_filters.enabled", true);
 user_pref("security.pki.crlite_mode", 2);
+user_pref("network.predictor.enable-prefetch", true);
+user_pref("network.predictor.preconnect-min-confidence", 20);
+user_pref("network.predictor.prefetch-force-valid-for", 3600);
+user_pref("network.predictor.prefetch-min-confidence", 30);
+user_pref("network.predictor.prefetch-rolling-load-count", 120);
+user_pref("network.predictor.preresolve-min-confidence", 10);
+
+// Faster SSL
+user_pref("network.ssl_tokens_cache_capacity", 32768);
+
+// Disable network separations
+user_pref("privacy.partition.network_state", false);
 
 // Reduce cpu usage ( Not recommend )
 user_pref("media.rdd-vpx.enabled", false);
@@ -268,6 +286,29 @@ user_pref("dom.script_loader.external_scripts.speculate_async.enabled", false);
 user_pref("dom.script_loader.external_scripts.speculate_link_preload.enabled", false);
 user_pref("dom.script_loader.external_scripts.speculate_non_parser_inserted.enabled", false);
 
+// GFX rendering tweaks
+user_pref("gfx.canvas.accelerated", true);
+user_pref("gfx.canvas.accelerated.cache-items", 32768);
+user_pref("gfx.canvas.accelerated.cache-size", 4096);
+user_pref("layers.acceleration.force-enabled", false);
+user_pref("gfx.content.skia-font-cache-size", 80);
+user_pref("gfx.webrender.all", true);
+user_pref("gfx.webrender.compositor", true);
+user_pref("gfx.webrender.compositor.force-enabled", true);
+user_pref("gfx.webrender.enabled", true);
+user_pref("gfx.webrender.precache-shaders", true);
+user_pref("gfx.webrender.program-binary-disk", true);
+user_pref("gfx.webrender.software.opengl", true);
+user_pref("image.mem.decode_bytes_at_a_time", 65536);
+user_pref("image.mem.shared.unmap.min_expiration_ms", 120000);
+user_pref("layers.gpu-process.enabled", true);
+user_pref("layers.gpu-process.force-enabled", true);
+user_pref("image.cache.size", 10485760);
+user_pref("media.memory_cache_max_size", 1048576);
+user_pref("media.memory_caches_combined_limit_kb", 3145728);
+user_pref("media.hardware-video-decoding.force-enabled", true);
+user_pref("media.ffmpeg.vaapi.enabled", true);
+
 // Disable FastBack to save RAM
 //user_pref("fission.bfcacheInParent", false);
 //user_pref("fission.disableSessionHistoryInParent", true);
@@ -351,6 +392,7 @@ user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
 /** DETECTION ***/
 user_pref("captivedetect.canonicalURL", "");
 user_pref("network.captive-portal-service.enabled", false);
+user_pref("network.notify.checkForProxies", false);
 user_pref("network.connectivity-service.enabled", false);
 user_pref("dom.private-attribution.submission.enabled", false);
 
